@@ -137,7 +137,7 @@ module Bot
       end
 
       command :consequences do |event|
-        "Ƹ̵̡Ӝ̵̨̄Ʒ this action will have consequences"
+        "🦋 this action will have consequences"
       end
     end
   end
