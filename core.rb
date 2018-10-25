@@ -4,14 +4,11 @@ require 'discordrb'
 require 'json'
 
 module Bot
-  cfg_file = File.read('config/config.json')
-  CFG = JSON.parse(cfg_file)
-
   Mongoid.logger.level = Logger::DEBUG
   Mongo::Logger.logger.level = Logger::DEBUG
   Mongoid.load!('config/mongoid.yml', :development)
 
-  BOT = Discordrb::Commands::CommandBot.new token: CFG['token'], client_id: CFG['app_id'], prefix: CFG['prefix']
+  BOT = Discordrb::Commands::CommandBot.new token: ENV['token'], client_id: ENV['app_id'], prefix: ENV['prefix']
 
   module Fish; end
   Dir['fish/*.rb'].each { |fish| load fish }
@@ -20,7 +17,7 @@ module Bot
   end
 
   BOT.command(:reload, help_available: false) do |event|
-    break unless event.user.id == CFG['owner_id']
+    break unless event.user.id == ENV['owner_id']
     Dir['fish/*.rb'].each { |fish| load fish }
     Fish.constants.each do |fish|
       BOT.include! Fish.const_get fish
@@ -34,14 +31,14 @@ module Bot
   end
 
   BOT.command(:exit, help_available: false) do |event|
-    break unless event.user.id == CFG['owner_id'] # Replace number with your ID
+    break unless event.user.id == ENV['owner_id'] # Replace number with your ID
 
     BOT.send_message(event.channel.id, 'Shutting down.')
     exit
   end
 
   BOT.command(:grantpermission, help_available: false) do |event, *args|
-    break unless event.user.id == CFG['owner_id']
+    break unless event.user.id == ENV['owner_id']
     BOT.set_role_permission(id, args[0])
     event.respond('Done.')
     nil
