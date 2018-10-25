@@ -1,2 +1,2 @@
-web: ruby core.rb
+worker: ruby core.rb
 
