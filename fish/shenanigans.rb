@@ -10,17 +10,17 @@ module Bot
 
       command :antisin do |event|
         unless event.message.mentions.blank?
-          "Chloe has a message for you, <@#{event.message.mentions.first.id}>: http://i.imgur.com/ABlyXTG.jpg"
+          "Chloe has a message for you, <@#{event.message.mentions.first.id}>: https://i.imgur.com/ABlyXTG.jpg"
         else
-          "Chloe has a message for you: http://i.imgur.com/ABlyXTG.jpg"
+          "Chloe has a message for you: https://i.imgur.com/ABlyXTG.jpg"
         end
       end
 
       command :sin do |event|
         unless event.message.mentions.blank?
-          "Kate has a message for you, <@#{event.message.mentions.first.id}>: http://i.imgur.com/M6tLQ3Q.jpg"
+          "Kate has a message for you, <@#{event.message.mentions.first.id}>: https://i.imgur.com/M6tLQ3Q.jpg"
         else
-          "Kate has a message for you: http://i.imgur.com/M6tLQ3Q.jpg"
+          "Kate has a message for you: https://i.imgur.com/M6tLQ3Q.jpg"
         end
       end
 
@@ -46,25 +46,25 @@ module Bot
 
       command :welcome2 do |event|
         unless event.message.mentions.blank?
-          "Hella welcome to <@#{event.message.mentions.first.id}>! Your personal welcome gift: http://40.media.tumblr.com/ff07d79fecdd13b407e1dd1f5186476a/tumblr_o1sc8cP3wU1sj5rhfo1_r1_1280.jpg"
+          "Hella welcome to <@#{event.message.mentions.first.id}>! Your personal welcome gift: https://40.media.tumblr.com/ff07d79fecdd13b407e1dd1f5186476a/tumblr_o1sc8cP3wU1sj5rhfo1_r1_1280.jpg"
         else
-          "Hella welcome! Your personal welcome gift: http://40.media.tumblr.com/ff07d79fecdd13b407e1dd1f5186476a/tumblr_o1sc8cP3wU1sj5rhfo1_r1_1280.jpg"
+          "Hella welcome! Your personal welcome gift: https://40.media.tumblr.com/ff07d79fecdd13b407e1dd1f5186476a/tumblr_o1sc8cP3wU1sj5rhfo1_r1_1280.jpg"
         end
       end
 
       command :baecome do |event|
         unless event.message.mentions.blank?
-          "Hella welcome to <@#{event.message.mentions.first.id}>! Your personal baecome gift: http://i.imgur.com/PqnIQgt.png"
+          "Hella welcome to <@#{event.message.mentions.first.id}>! Your personal baecome gift: https://i.imgur.com/PqnIQgt.png"
         else
-          "Hella welcome! Your personal baecome gift: http://i.imgur.com/PqnIQgt.png"
+          "Hella welcome! Your personal baecome gift: https://i.imgur.com/PqnIQgt.png"
         end
       end
 
       command :baycome do |event|
         unless event.message.mentions.blank?
-          "Hella welcome to <@#{event.message.mentions.first.id}>! Your personal baycome gift: http://dandelion-s.deviantart.com/art/Life-is-Strange-568865002"
+          "Hella welcome to <@#{event.message.mentions.first.id}>! Your personal baycome gift: https://dandelion-s.deviantart.com/art/Life-is-Strange-568865002"
         else
-          "Hella welcome! Your personal baycome gift: http://dandelion-s.deviantart.com/art/Life-is-Strange-568865002"
+          "Hella welcome! Your personal baycome gift: https://dandelion-s.deviantart.com/art/Life-is-Strange-568865002"
         end
       end
 
@@ -98,9 +98,9 @@ module Bot
 
       command :well do |event|
         unless event.message.mentions.blank?
-          "Chloe has a question for you, <@#{event.message.mentions.first.id}>: http://i.imgur.com/OhoHDgu.jpg"
+          "Chloe has a question for you, <@#{event.message.mentions.first.id}>: https://i.imgur.com/OhoHDgu.jpg"
         else
-          "Chloe has a question for you: http://i.imgur.com/OhoHDgu.jpg"
+          "Chloe has a question for you: https://i.imgur.com/OhoHDgu.jpg"
         end
       end
 
