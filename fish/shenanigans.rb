@@ -4,16 +4,8 @@ module Bot
       extend Discordrb::Commands::CommandContainer
       puts 'Shenanigans loaded'
 
-      command :bay do |event|
-        "#ThereIsNoBayEnding"
-      end
-
       command :koethe do |event|
         "Random Koethe song " << ["https://www.youtube.com/watch?v=rhvZxmgLfNA","https://www.youtube.com/watch?v=IcJP7V_3Fdc","https://www.youtube.com/watch?v=KRpy1JKZ4wY","https://www.youtube.com/watch?v=DE0IVM7T3ic","https://www.youtube.com/watch?v=rW4eVMb_Sls","https://www.youtube.com/watch?v=z1NOTgl-4yI","https://www.youtube.com/watch?v=R4uo83J5CTA","https://www.youtube.com/watch?v=2KdN6_1bK1M","https://www.youtube.com/watch?v=2MPB7cu9W_c","https://www.youtube.com/watch?v=apr60Dh0BXE","https://www.youtube.com/watch?v=rTrlQogUwtg","https://www.youtube.com/watch?v=ynLDKMAcDPo","https://www.youtube.com/watch?v=b4EEi4R8yHY","https://www.youtube.com/watch?v=3HZY1uA_hes","https://www.youtube.com/watch?v=5mYBnowe4OY","https://www.youtube.com/watch?v=Z5SvnsLMH2o","https://www.youtube.com/watch?v=mqv1NEWG0G4","https://www.youtube.com/watch?v=mzdSepr9xKA"].sample
-      end
-
-      command :pricefield do |event|
-        "The One True Pairing! #bae>bay"
       end
 
       command :antisin do |event|
@@ -38,10 +30,6 @@ module Bot
 
       command :nohate do |event|
         "We might not agree with you, but we don't hate you personally."
-      end
-
-      command :grahamfield do |event|
-        "Twilight, still a better love story than grahamfield."
       end
 
       command :reminder do |event|
@@ -92,16 +80,8 @@ module Bot
         "When we talk about bae/bay we mean the choice at the end of the game. Bae means keeping Chloe, bay means sacrificing Chloe."
       end
 
-      command :bae do |event|
-        "Bae>Bay. Preach it."
-      end
-
       command :BAE, help_available: false do |event|
         "```\n"+" ______         _______             ______       _     _\n"+"(____  \\   /\\  (_______)   _  _    (____  \\   /\\| |   | |\n"+" ____)  ) /  \\  _____     ( \\( \\    ____)  ) /  \\ |___| |\n"+"|  __  ( / /\\ \\|  ___)     ) )) )  |  __  ( / /\\ \\_____/\n"+"| |__)  ) |__| | |_____   (_/(_/   | |__)  ) |__| |___\n"+"|______/|______|_______)           |______/|______(___)\n"+"                                                         ```"
-      end
-
-      command :puhi,  help_available: false do |event|
-        "Puhi puhi!" if event.user.id == CFG['owner_id'] || event.user.id == 167343260614787073
       end
 
       command :cookie do |event|
@@ -114,18 +94,6 @@ module Bot
 
       command :plisd do |event|
         "PLiSD - **P**ost **L**ife **i**s **S**trange **D**epression"
-      end
-
-      command :choose,  help_available: false do |event|
-        "W/e. Bae. #bae>bay"
-      end
-
-      command :marshfield,  help_available: false do |event|
-        "Try !!pricefield instead."
-      end
-
-      command :mfa,  help_available: false do |event|
-        "Try !!pfa instead."
       end
 
       command :well do |event|
